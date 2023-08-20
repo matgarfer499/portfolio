@@ -1,5 +1,4 @@
 .iphone-blur{
-    background: rgba(255, 255, 255, 0.014);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     -moz-backdrop-filter:saturate(180%) blur(20px); 
     backdrop-filter:saturate(180%) blur(20px); 
@@ -8,6 +7,6 @@
 
 @media (min-width: 640px) {
     .iphone-blur {
-        backdrop-filter: blur(0px);
+        backdrop-filter: saturate(0%) blur(0px);
     }
 }

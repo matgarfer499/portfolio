@@ -14,7 +14,7 @@ export function NavBar() {
 
     return (
         <>
-            <nav className="iphone-blur sm:backdrop-blur-0 fixed z-50 w-screen flex justify-between items-center h-[60px] bg-transparent">
+            <nav className="backdrop-blur-lg sm:backdrop-blur-0 fixed z-50 w-screen flex justify-between items-center h-[60px] bg-transparent">
                 <h2 className="text-3xl text-white font-bold w-2/12 flex justify-center pl-2 sm:pl-0">
                     MG
                     <span className="text-3xl text-orange-500 font-bold flex items-end">
