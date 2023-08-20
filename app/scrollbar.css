@@ -1,0 +1,30 @@
+.custom-scrollbar {
+    background-color: transparent;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;
+    background-color: #2c2d32;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+
+.scrollbar-x {
+    background-color: transparent;
+}
+
+.scrollbar-x::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;
+    background-color: #2c2d32;
+}
+
+.scrollbar-x::-webkit-scrollbar-thumb {
+    background-color: white;
+}

@@ -1,0 +1,84 @@
+@keyframes colorChange {
+    0% {
+        color: #FFA500;
+        /* Color inicial (naranja) */
+    }
+
+    25% {
+        color: #4CAF50;
+        /* Otro color */
+    }
+
+    50% {
+        color: #2196F3;
+        /* Otro color */
+    }
+
+    75% {
+        color: #E91E63;
+        /* Otro color */
+    }
+
+    100% {
+        color: #FFA500;
+        /* Color final (naranja) */
+    }
+}
+
+.text-name-animation {
+    animation: colorChange 5s infinite;
+    /* Cambia el valor "5s" para ajustar la velocidad */
+}
+
+.animate-gradient-right {
+    animation: gradientRight 50s ease infinite;
+    background-size: 400% 400%;
+    background-image: linear-gradient(-45deg, #1a202c, black, #1a202c, black);
+}
+
+@keyframes gradientRight {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient-left {
+    animation: gradientLeft 50s ease infinite;
+    background-size: 400% 400%;
+    background-image: linear-gradient(45deg, white, #f97316, white);
+}
+
+@keyframes gradientLeft {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Estilos para el menú desplegable */
+.menu {
+    height: 0vh;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.menu.isActive {
+    height: 100vh;
+    opacity: 1;
+}
