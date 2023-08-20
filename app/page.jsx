@@ -41,7 +41,7 @@ export default function Page() {
                         </SectionTitle>
                         <AboutMe />
                         <a
-                            href="Currículum_vitae_Matías_José_García_Fernández.pdf"
+                            href="Currículum_vitae_MG.pdf"
                             className="cursor-pointer mt-4 border-2 border-orange-500 text-orange-500 px-6 py-3 rounded-lg hover:bg-orange-500 hover:text-white transition duration-300"
                             download
                         >

@@ -1,0 +1,12 @@
+.iphone-blur{
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    -moz-backdrop-filter:saturate(180%) blur(20px); 
+    backdrop-filter:saturate(180%) blur(20px); 
+    backdrop-filter: blur(16px);
+}
+
+@media (min-width: 640px) {
+    .iphone-blur {
+        backdrop-filter: blur(0px);
+    }
+}

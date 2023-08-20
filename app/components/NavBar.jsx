@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Links from "./Links";
 import "../animations.css"
+import "../blurIphone.css"
 
 export function NavBar() {
     const [menu, setMenu] = useState(false);
@@ -13,7 +14,7 @@ export function NavBar() {
 
     return (
         <>
-            <nav className="fixed z-50 w-screen flex justify-between items-center h-[60px] bg-transparent">
+            <nav className="iphone-blur sm:backdrop-blur-0 fixed z-50 w-screen flex justify-between items-center h-[60px] bg-transparent">
                 <h2 className="text-3xl text-white font-bold w-2/12 flex justify-center pl-2 sm:pl-0">
                     MG
                     <span className="text-3xl text-orange-500 font-bold flex items-end">
@@ -61,7 +62,7 @@ export function NavBar() {
                 </div>
             </nav>
             {(
-                <div className={`w-screen fixed sm:hidden z-40 top-0 backdrop-blur-lg flex flex-col gap-8 text-xl justify-center items-center menu ${menu ? 'isActive' : ''}`}>
+                <div className={`w-screen fixed sm:hidden z-40 top-0 iphone-blur flex flex-col gap-8 text-xl justify-center items-center menu ${menu ? 'isActive' : ''}`}>
                     <Links onClick={toggleMenu} />
                 </div>
             )}
