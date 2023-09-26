@@ -1,6 +1,6 @@
 export function AboutMeCard({svg, title, location}) {
     return (
-        <div className="w-full sm:w-[160px] md:w-2/5 lg:w-[250px] xl:w-[320px] h-[160px] sm:h-[160px] mt-2 flex flex-col justify-start items-center shadow-lg shadow-[#0a0d11]">
+        <div className="w-full sm:w-[49%] h-[160px] sm:h-[160px] mt-2 flex flex-col justify-start items-center shadow-lg shadow-[#0a0d11]">
             {svg}
             <p className="w-11/12 text-center text-white text-xl sm:text-sm font-semibold mt-2">
                 {title}
