@@ -36,7 +36,7 @@ export default function Page() {
       <Section id={'about-me'}>
         <div className='w-screen h-[900px] sm:h-screen flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center'>
           <ProfilePhoto />
-          <div className='w-11/12 sm:w-4/6 h-full sm:h-4/5 flex flex-col items-center'>
+          <div className='sm:w-4/6 h-full sm:h-4/5 flex flex-col items-center'>
             <SectionTitle width={'responsive-width'}>Sobre mí</SectionTitle>
             <AboutMe />
             <a
@@ -61,7 +61,7 @@ export default function Page() {
         <div className='w-full h-full flex justify-center items-center'>
           <div className='w-full h-5/6 flex flex-wrap justify-center items-start'>
             <SectionTitle width={'responsive-width'}>Proyectos</SectionTitle>
-            <div className='w-11/12 h-4/5 flex gap-6 overflow-x-auto snap-x snap-mandatory relative scrollbar-x p-2'>
+            <div className='h-4/5 flex gap-6 overflow-x-auto snap-x snap-mandatory relative scrollbar-x p-2'>
               <ProyectCard
                 image={'liftup'}
                 title={'LiftUp'}

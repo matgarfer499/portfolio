@@ -7,8 +7,8 @@ export const metadata = {
  
 export default function RootLayout({ children }) {
   return (
-    <html className='scroll-smooth' lang="en">
-      <body className='animate-gradient-right'>{children}</body>
+    <html className='scroll-smooth' lang='en'>
+      <body className='animate-gradient-right px-12 py-4'>{children}</body>
     </html>
   )
 }

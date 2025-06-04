@@ -25,10 +25,10 @@ export function ProyectCard({
                 <h2 className="text-orange-500 text-xl sm:text-2xl font-semibold flex items-center h-1/5">
                     {title}
                 </h2>
-                <p className="text-white h-4/5 text-justify w-11/12 text-xs sm:text-lg my-2">
+                <p className="text-white h-4/5 text-justify text-xs sm:text-lg my-2">
                     {children}
                 </p>
-                <div className="h-2/6 w-11/12 flex justify-center items-start gap-2 my-2">
+                <div className="h-2/6 flex justify-center items-start gap-2 my-2">
                     <a
                         href={codeHref}
                         className="border-2 border-orange-500 text-orange-500 text-sm sm:text-normal cursor-pointer px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-orange-500 hover:text-white transition duration-300"
