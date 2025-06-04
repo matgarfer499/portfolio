@@ -9,7 +9,6 @@ import ProyectCard from './components/ProyectCard'
 import ContactTags from './components/ContactTags'
 import './scrollbar.css'
 import './animations.css'
-import './sizes.css'
 
 const LiftUp = [
   'Laravel',
@@ -37,7 +36,7 @@ export default function Page() {
         <div className='w-screen h-[900px] sm:h-screen flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center'>
           <ProfilePhoto />
           <div className='sm:w-4/6 h-full sm:h-4/5 flex flex-col items-center'>
-            <SectionTitle width={'responsive-width'}>Sobre mí</SectionTitle>
+            <SectionTitle title='Sobre mi' />
             <AboutMe />
             <a
               href='Currículum_vitae_MG.pdf'
@@ -52,7 +51,7 @@ export default function Page() {
       <Section id={'habilities'}>
         <div className='w-screen sm:h-screen flex justify-center items-center'>
           <div className='w-full h-5/6 flex flex-wrap justify-center items-start'>
-            <SectionTitle width={'responsive-width'}>Habilidades</SectionTitle>
+            <SectionTitle title='Habilidades' />
             <Habilities />
           </div>
         </div>
@@ -60,7 +59,7 @@ export default function Page() {
       <Section id={'proyects'}>
         <div className='w-full h-full flex justify-center items-center'>
           <div className='w-full h-5/6 flex flex-wrap justify-center items-start'>
-            <SectionTitle width={'responsive-width'}>Proyectos</SectionTitle>
+            <SectionTitle title='Proyectos' />
             <div className='h-4/5 flex gap-6 overflow-x-auto snap-x snap-mandatory relative scrollbar-x p-2'>
               <ProyectCard
                 image={'liftup'}
