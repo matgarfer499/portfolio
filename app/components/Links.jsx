@@ -14,7 +14,7 @@ export function Links({onClick}) {
                 href="#about-me"
                 className={linkClassName}
             >
-                Sobre mí
+                Experiencia
             </a>
             <a
                 onClick={onClick}
