@@ -1,38 +1,39 @@
 export function Links({onClick}) {
+    const linkClassName = 'text-white hover:scale-110 hover:text-orange-500 transition duration-50'
     return (
         <>
             <a
                 onClick={onClick}
                 href="#home"
-                className="text-white font-[350] hover:scale-110 hover:text-orange-500 transition duration-300"
+                className={linkClassName}
             >
                 Inicio
             </a>
             <a
                 onClick={onClick}
                 href="#about-me"
-                className="text-white font-[350] hover:scale-110 hover:text-orange-500 transition duration-300"
+                className={linkClassName}
             >
                 Sobre mí
             </a>
             <a
                 onClick={onClick}
                 href="#habilities"
-                className="text-white font-[350] hover:scale-110 hover:text-orange-500 transition duration-300"
+                className={linkClassName}
             >
                 Habilidades
             </a>
             <a
                 onClick={onClick}
                 href="#proyects"
-                className="text-white font-[350] hover:scale-110 hover:text-orange-500 transition duration-300"
+                className={linkClassName}
             >
                 Proyectos
             </a>
             <a
                 onClick={onClick}
                 href="#contact"
-                className="text-white font-[350] hover:scale-110 hover:text-orange-500 transition duration-300"
+                className={linkClassName}
             >
                 Contacto
             </a>
