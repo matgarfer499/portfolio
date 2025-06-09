@@ -2,7 +2,7 @@ import React from "react";
 
 export function IntroSection() {
     return (
-        <div className="w-screen h-[500px] sm:h-screen flex flex-col justify-center items-center">
+        <div className="w-full h-[500px] sm:h-screen flex flex-col justify-center items-center">
             <div className="sm:mt-8 text-center">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white tracking-wide no-underline">
                     <span className="text-orange-500">&lt;&gt;</span>¡Hola,

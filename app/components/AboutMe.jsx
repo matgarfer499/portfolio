@@ -50,7 +50,7 @@ export function AboutMe() {
                         clipRule="evenodd"
                     />
                 </svg>
-                <p className="w-11/12 text-justify text-sm md:text-normal text-white text-md font-semibold mt-2">
+                <p className="text-justify text-sm md:text-normal text-white text-md font-semibold mt-2">
                     ¡Hola, soy Matías! Desde siempre me ha encantado las
                     tecnologías y el mundo de la informática, siempre me he
                     considerado un "friki" de este mundillo. Me encanta la

@@ -33,7 +33,7 @@ export default function Page() {
         <IntroSection />
       </Section>
       <Section id={'about-me'}>
-        <div className='w-screen h-[900px] sm:h-screen flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center'>
+        <div className='w-full h-[900px] sm:h-screen flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center'>
           <ProfilePhoto />
           <div className='sm:w-4/6 h-full sm:h-4/5 flex flex-col items-center'>
             <SectionTitle title='Sobre mi' />
@@ -49,7 +49,7 @@ export default function Page() {
         </div>
       </Section>
       <Section id={'habilities'}>
-        <div className='w-screen sm:h-screen flex justify-center items-center'>
+        <div className='w-full sm:h-screen flex justify-center items-center'>
           <div className='w-full h-5/6 flex flex-wrap justify-center items-start'>
             <SectionTitle title='Habilidades' />
             <Habilities />
