@@ -1,27 +1,27 @@
-import React from "react";
+import { IconBrandLinkedin, IconBrandGithub, IconFileCv } from '@tabler/icons-react';
+import ProfilePhoto from './ProfilePhoto'
 
 export function IntroSection() {
+    const socialMediaClassName = "w-8 h-8 border rounded-full flex justify-center items-center"
     return (
-        <div className="w-full h-[500px] sm:h-screen flex flex-col justify-center items-center">
-            <div className="sm:mt-8 text-center">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white tracking-wide no-underline">
-                    <span className="text-orange-500">&lt;&gt;</span>¡Hola,
-                    Mundo!
-                    <span className="text-orange-500">&lt;/&gt;</span>
-                </h1>
-                <h2 className="text-name-animation text-3xl sm:text:4xl lg:text-5xl mt-4 font-bold">
-                    Soy Matías José García Fernández
-                </h2>
-                <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl mt-1 font-semibold">
-                    Desarrollador web Full Stack
+        <div className="w-full h-[500px] sm:h-screen flex gap-20 items-center text-white">
+            <div className='w-2/3 flex flex-col gap-4'>
+                <h1 className="text-3xl sm:text:4xl font-medium">
+                    ¡Hola a todos! Soy Matías ✌🏻,
+                    <br />
+                    un <span className="text-orange-500">&lt;/Desarrollador Web Full-Stack&gt;</span> de Málaga con mucha arte
                     <span className="text-orange-500">.</span>
-                </h2>
-                <div className="w-12 h-1 bg-orange-500 mx-auto mt-6"></div>
+                </h1>
+                <p>Con mas 2 años de experiencia, me encuentro mejorando mis habilidades tanto tecnicas y blandas, buscando ser una
+                    mejor versión de mi mismo que la de ayer<span className="text-orange-500">.</span></p>
+                {/* TODO CHANGE DIVS FOR a TAGS */}
+                <div className="flex items-center gap-4">
+                    <div className={socialMediaClassName}><IconBrandLinkedin stroke={2} /></div>
+                    <div className={socialMediaClassName}><IconBrandGithub stroke={2} /></div>
+                    <div className={socialMediaClassName}><IconFileCv stroke={2} /></div>
+                </div>
             </div>
-
-            <a href="#contact" className="mt-8 border-2 border-orange-500 text-orange-500 px-6 py-3 rounded-lg hover:bg-orange-500 hover:text-white transition duration-300">
-                Contáctame
-            </a>
+            <ProfilePhoto />
         </div>
     );
 }
