@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export function ProfilePhoto() {
     return (
-        <div className="hidden sm:w-2/6 h-4/5 sm:flex flex-col items-center">
-            <div className="sm:w-3/4 h-full shadow-lg shadow-[#0a0d11]">
+        <div className="hidden sm:flex justify-center items-center w-1/3">
+            <div className="shadow-lg rounded-full w-[370px] h-[370px] overflow-hidden">
                 <Image
                     src={"/images/Matías.jpeg"}
                     width={400}
