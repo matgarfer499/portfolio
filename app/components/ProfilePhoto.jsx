@@ -3,9 +3,9 @@ import Image from "next/image";
 export function ProfilePhoto() {
     return (
         <div className="hidden sm:flex justify-center items-center w-1/3">
-            <div className="shadow-lg rounded-full w-[370px] h-[370px] overflow-hidden">
+            <div className="shadow-lg rounded-full w-[470px] h-[470px] overflow-hidden shrink-0">
                 <Image
-                    src={"/images/Matías.jpeg"}
+                    src={"/images/Yo.webp"}
                     width={400}
                     height={400}
                     alt="foto mia"
