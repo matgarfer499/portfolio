@@ -1,5 +1,5 @@
 export function Links({onClick}) {
-    const linkClassName = 'text-white hover:scale-110 hover:text-orange-500 transition duration-50'
+    const linkClassName = 'text-white hover:text-orange-500 transition duration-50'
     return (
         <>
             <a
