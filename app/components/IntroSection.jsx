@@ -2,11 +2,11 @@ import { IconBrandLinkedin, IconBrandGithub, IconFileCv } from '@tabler/icons-re
 import ProfilePhoto from './ProfilePhoto'
 
 export function IntroSection() {
-    const socialMediaClassName = "w-8 h-8 border rounded-full flex justify-center items-center"
+    const socialMediaClassName = "w-8 h-8 border-2 rounded-full flex justify-center items-center hover:border-orange-500 hover:bg-orange-500 transition-all duration-100 hover:cursor-pointer"
     return (
         <div className="w-full h-[500px] sm:h-screen flex gap-20 items-center text-white">
             <div className='w-2/3 flex flex-col gap-4'>
-                <h1 className="text-3xl sm:text:4xl font-medium">
+                <h1 className="text-4xl sm:text:4xl font-medium">
                     ¡Hola a todos! Soy Matías ✌🏻,
                     <br />
                     un <span className="text-orange-500">&lt;/Desarrollador Web Full-Stack&gt;</span> de Málaga con mucha arte
