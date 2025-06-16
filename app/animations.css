@@ -1,35 +1,3 @@
-@keyframes colorChange {
-    0% {
-        color: #FFA500;
-        /* Color inicial (naranja) */
-    }
-
-    25% {
-        color: #4CAF50;
-        /* Otro color */
-    }
-
-    50% {
-        color: #2196F3;
-        /* Otro color */
-    }
-
-    75% {
-        color: #E91E63;
-        /* Otro color */
-    }
-
-    100% {
-        color: #FFA500;
-        /* Color final (naranja) */
-    }
-}
-
-.text-name-animation {
-    animation: colorChange 5s infinite;
-    /* Cambia el valor "5s" para ajustar la velocidad */
-}
-
 .animate-gradient-right {
     animation: gradientRight 50s ease infinite;
     background-size: 400% 400%;
