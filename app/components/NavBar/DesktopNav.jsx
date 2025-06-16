@@ -1,15 +1,57 @@
+import { useState, useEffect } from 'react';
 import { IconClick } from '@tabler/icons-react';
-import "../../animations.css";
-import "../../blurIphone.css";
 import Links from "../Links";
+import { Flat } from '@alptugidin/react-circular-progress-bar';
 
 export function DesktopNav() {
+    const [scrollProgress, setScrollProgress] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
+
+    const updateScrollProgress = () => {
+        const scrollTop = window.scrollY;
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+        setScrollProgress(Math.min(progress, 100));
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', updateScrollProgress);
+        return () => window.removeEventListener('scroll', updateScrollProgress);
+    }, []);
+
+    const isCollapsed = scrollProgress > 0 && !isHovered;
+
     return (
-        <div className="hidden sm:flex justify-center gap-10 text-center items-center m-auto px-10 py-1 rounded-full bg-neutral-300/20 hover:bg-neutral-300/30 dark:bg-neutral-400/20 dark:hover:bg-neutral-400/30 text-neutral-600 dark:text-neutral-300 backdrop-blur-[1px] border border-neutral-400/20">
-            <IconClick className="stroke-white w-8 h-8" stroke={1.5} />
-            <Links />
+        <div
+            className={`fixed top-4 left-1/2 transform -translate-x-1/2 rounded-full px-4 py-2 transition-all duration-300 flex items-center gap-4 ease-[cubic-bezier(0.68,-0.55,0.27,1.55)] overflow-hidden
+             border border-slate-700 bg-[#1a202c]`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            <IconClick className="stroke-slate-200 w-8 h-8 flex-shrink-0" stroke={1.5} />
+            <div
+                className={`transition-[transform,opacity,visibility] duration-500 ease-in-out transform origin-center`}
+            >
+                <Links />
+            </div>
+
+            <div className="w-8 h-8 flex-shrink-0 overflow-hidden">
+                <Flat
+                    progress={scrollProgress}
+                    range={{ from: 0, to: 100 }}
+                    showValue={false}
+                    showMiniCircle={false}
+                    sx={{
+                        strokeColor: '#1a202c',
+                        barWidth: 12,
+                        bgColor: { value: '#10131b', transparency: '10' },
+                        strokeLinecap: 'square',
+                        loadingTime: 0,
+                    }}
+                />
+            </div>
         </div>
-    )
+    );
 }
 
-export default DesktopNav
+export default DesktopNav;
